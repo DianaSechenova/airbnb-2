@@ -1,0 +1,164 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  color: #222222;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button {
+  font-size: 1rem;
+}
+
+.content-spasing {
+  margin: 0 80px;
+}
+
+@media (max-width: 960px) {
+  .content-spasing {
+    margin: 0 20px;
+  }
+}
+
+.content-wrapper {
+  width: 100%;
+  padding: 0 1rem;
+  max-width: calc(1400px + 2rem);
+  margin: 0 auto;
+}
+
+.spesing {
+  margin: 8px;
+  padding-bottom: 116px;
+}
+
+@media (max-width: 960px) {
+  .spesing {
+    padding-bottom: 40px;
+  }
+}
+
+.text-regular {
+  line-height: 20px;
+  font-weight: 400;
+  color: #222222;
+  padding-top: 4px;
+}
+
+@media (max-width: 960px) {
+  .text-regular {
+    font-size: 14px;
+  }
+}
+
+.link-next {
+  display: block;
+  margin-top: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+.link-next > span {
+  margin-left: 8px;
+}
+
+.link-next > a {
+  text-decoration: underline;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.slider {
+  position: relative;
+  padding: 0 9px;
+}
+
+.slider__item {
+  margin-right: 6px;
+}
+
+.slider .slick-arrow {
+  position: absolute;
+  top: 29%;
+  z-index: 10;
+  font-size: 0;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  background-color: white;
+}
+
+.slider .slick-arrow .slick-prev {
+  left: 0;
+  background: url(../arrow1.png) 0 0/100% no-repeat #ffffff;
+}
+
+.slider .slick-arrow .slick-next {
+  right: 0;
+  background: url(../arrow2.png) 0 0/100% no-repeat #ffffff;
+}
+
+.slider .slick-arrow .slick-disabled {
+  opacity: 0;
+}
+
+.slider .slick-arrow {
+  position: absolute;
+  top: 32%;
+  z-index: 10;
+}
+
+.slider .slick-arrow.slick-prev {
+  left: 0;
+  font-size: 0;
+}
+
+.slider .slick-arrow.slick-next {
+  right: 0;
+  font-size: 0;
+}
+
+.slider .slick-arrow.slick-disabled {
+  opacity: 0;
+}
+/*# sourceMappingURL=slider.css.map */

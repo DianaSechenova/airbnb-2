@@ -1,0 +1,83 @@
+@import "./mixin";
+@import "./variables.scss";
+
+.form {
+  position: absolute;
+  top: 120px;
+  left: 80px;
+  width: 441px;
+  &__inner {
+    background-color: $white-color;
+    padding: 32px;
+    border-radius: 4px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+  }
+  &__title {
+    font-size: 1em;
+    line-height: 36px;
+  }
+  &__place {
+    @include formDetals;
+  }
+  &__date {
+    display: flex;
+    margin: 8px 0;
+    &_widtch {
+      width: 50%;
+    }
+  }
+  &__input {
+    width: 100%;
+    display: inline-block;
+    border: none;
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+    font-size: 17px;
+    height: 48px;
+    padding: 12px;
+    color: #484848;
+    margin: 8px 0;
+  }
+  &__lable {
+    font-size: 14px;
+    font-weight: 800px;
+    letter-spacing: 1px;
+    padding-bottom: $spasing;
+  }
+  &__button {
+    overflow: auto;
+    padding-top: 16px;
+    &_btn {
+      border: 2px solid ff5a5f;
+      border-radius: 4px;
+      background-color: #ff5a5f;
+      padding: 10px 22px;
+      border: transparent;
+      color: $white-color;
+      text-align: center;
+      float: right;
+    }
+  }
+}
+@media (max-width: 960px) {
+  .page-header {
+    @include column;
+    position: static;
+  }
+  .form {
+    @include column;
+    position: static;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .form__date {
+    @include string;
+  }
+  .form__button_btn {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding: 10px 22px;
+  }
+}

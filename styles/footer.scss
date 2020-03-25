@@ -1,0 +1,69 @@
+@import "./variables.scss";
+@import "./mixin";
+
+.footer {
+  border-top: 1px solid rgb(235, 235, 235);
+  padding: 40px 0;
+  width: 100%;
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.5em;
+  }
+  &__section {
+    padding: $spasing;
+    &_title {
+      margin-bottom: 16px;
+    }
+    &_button > button {
+      margin-left: $spasing;
+      background-color: rgb(0, 106, 112);
+      border: 1px solid transparent;
+      border-radius: $footerSpasing;
+      padding: 0 4px;
+      color: $white-color;
+    }
+  }
+}
+li {
+  margin-bottom: $footerSpasing;
+  color: $footer-text-color;
+}
+
+li:hover {
+  border-bottom: 1px solid $footer-text-color;
+}
+
+#butoon-string {
+  @include string;
+}
+
+.promo {
+  @include string;
+  color: $footer-text-color;
+  &__subgect {
+    margin-right: $footerSpasing;
+  }
+  &__flex {
+    padding: 0 $spasing;
+  }
+  &__item-point {
+    padding: 0 4px;
+  }
+  &__more > a {
+    color: $footer-text-color;
+  }
+}
+@media (max-width: 960px) {
+  .footer__content,
+  .promo__more,
+  .promo__flex,
+  .footer {
+    display: none;
+  }
+  .footer-mobile {
+    border-top: 1px solid rgb(235, 235, 235);
+    padding: 40px 0;
+    width: 100%;
+  }
+}
